@@ -10,7 +10,7 @@ class Solution {
 
         int [][] table = new int[N+1][N+1]; //table[i][j]表示 s1[i] s2[j] 最大common數量
         for(int i=0; i<=N; i++){
-            table[0][0]=0;
+            table[0][i]=0;
             table[i][0]=0;
         }
         for(int i=1; i<=N; i++){
