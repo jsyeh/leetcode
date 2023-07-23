@@ -54,3 +54,4 @@ class Solution {
 //題目只input n, 卻要建出「全部可能的」full binary tree
 //可用函式呼叫函式，如果用了一個node當root,再利用for迴圈，把左邊、右邊都建出來
 //但 n<=20 會讓答案太多，所以要事先記下可能的subtree 的形狀，重覆利用，省空間
+
