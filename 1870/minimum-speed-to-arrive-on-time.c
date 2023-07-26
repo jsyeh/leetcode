@@ -1,3 +1,4 @@
+//1870. Minimum Speed to Arrive on Time
 bool possible(int* dist, int distSize, double hour, int speed){
     double t = 0;
     for(int i=0; i<distSize-1; i++){
