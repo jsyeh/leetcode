@@ -1,4 +1,5 @@
 # 2808. Minimum Seconds to Equalize a Circular Array
+https://leetcode.com/contest/biweekly-contest-110/problems/minimum-seconds-to-equalize-a-circular-array/
 
 You are given a **0-indexed** array `nums` containing `n` integers.
 
