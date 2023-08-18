@@ -17,9 +17,10 @@ class Solution:
                     left = mid + 1
                 else:
                     right = mid
-            # 離開迴圈時，便代表 runSum[left]...runSum[i] 剛好不夠
-            now = i + 1 - left
+            # 離開迴圈時，便代表 runSum[left]...runSum[i] 剛好夠
+            now = i - left + 1 # nums[left]...nums[i] 共有 i-left+1個數
             if now > ans:
                 ans = now
 
         return ans
+
