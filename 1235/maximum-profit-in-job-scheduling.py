@@ -25,13 +25,3 @@ class Solution:
             return max(ans, dp(j)+job[i][2]) # 不用job[i] or 用job[i]，最佳利潤
         return dp(0) # 從頭開始，好好的問下去（Top-Down Dynamc Programming)
 
-
-        for i in range(N): # 現在輪到第i個開始的工作
-            # 有兩種可能：挑job[i], 不挑job[i]
-            # 如果挑 job[i] 的話，job[i]的 startTime 之前的 profit 才能相加
-            part1 = job[i][2]
-            # 如果不挑 job[i] 就拿前面的profit來算
-            part2 = table[i-1]
-            job[i]
-            
-        return 0
