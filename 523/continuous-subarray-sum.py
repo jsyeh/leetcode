@@ -22,8 +22,8 @@ class Solution:
                 prefixDict[now] = i # 才能量到最長的距離
             prefixMod[i+1] = now
 
-        print(prefixMod)
-        print(prefixDict)
+        # print(prefixMod)
+        # print(prefixDict)
         return False
 # case 86/99: [23,2,4,6,6] 7 有重覆的 0 卻沒發現
 # case 87/99: [0] 1 只有1個數，但題目希望長度2以上
