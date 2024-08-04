@@ -5,7 +5,8 @@
 # 問題突然簡化成：「counter是否一樣」
 class Solution:
     def canBeEqual(self, target: List[int], arr: List[int]) -> bool:
-        if Counter(target) == Counter(arr):  # 如果統計出現次數都相同
-            return True # 就能交換出來
-        return False # 不相同時，就無法做出來
+        return Counter(target) == Counter(arr)
+        # if Counter(target) == Counter(arr):  # 如果統計出現次數都相同
+        #     return True # 就能交換出來
+        # return False # 不相同時，就無法做出來
 # 在 Python 3.10 後，兩個 Counter 的 == 比較，會更直覺。(LeetCode 用 Python 3.11)
