@@ -11,7 +11,7 @@ class Solution:
                     board[3*i+0][3*j+2] = False
                     board[3*i+1][3*j+1] = False
                     board[3*i+2][3*j+0] = False
-                elif grid[i][j]=='\\' # \ 反斜線 左上往右下切
+                elif grid[i][j]=='\\': # \ 反斜線 左上往右下切
                     board[3*i+0][3*j+0] = False
                     board[3*i+1][3*j+1] = False
                     board[3*i+2][3*j+2] = False
