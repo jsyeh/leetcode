@@ -1,4 +1,4 @@
-# LeetCode 751. Robot Collisions 很多機器人互撞。一開始給你 positions[i] healths[i] directions[i] 是 Robot i 的資料
+# LeetCode 2751. Robot Collisions 很多機器人互撞。一開始給你 positions[i] healths[i] directions[i] 是 Robot i 的資料
 # 往右、往左的兩個機器人，會相撞，撞到時，healths值相同時，會「兩敗俱傷」, 如果 healths 值不同，那小的會消失，大的會「減1點」
 # 這幾天的題目很像，都可用 Stack 實作。可想像成 左括號、右括號, 遇到對應括號，就要「對戰」不會太難。只是 Index 資訊要存起來
 class Solution:
