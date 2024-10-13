@@ -1,7 +1,6 @@
 # LeetCode 2406. Divide Intervals Into Minimum Number of Groups
 # 撞在一起的 intervals 要分在不同群，問「最小」有分幾群即可。
 # Hint 2 暗示「最多重疊的數量」就是答案。有點像「開會需要幾間會議室」
-# 昨天題目「朋友來訪」坐椅子，簡化成「記錄最多用了幾個椅子」就解決了
 class Solution:
     def minGroups(self, intervals: List[List[int]]) -> int:
         intervals.sort()  # 照 left 時間排序（left開始,right離開）
