@@ -6,11 +6,18 @@ class Solution:
         # 用比較厲害的sliding window法，記下「之前累積幾個combo」
         ans = []
         combo = 0
-        for i in range(1,len(nums)): # 先看看第1組，有沒有順利combo
-            if nums[i-1] + 1 == nums[i]: combo += 1  # 相鄰差1，combo
-            else: combo = 0  # 重新累積 combo
-            
-            if i >= k-1:  # 開始能連續 k-1 combo 項 (有 k項 0...k-1)
-                if combo >= k-1: ans.append(nums[i])  # 累積的 combo 數足夠
-                else: ans.append(-1)
+        for i in range(k-1): # 先看看第1組，有沒有順利combo
+            if nums[i] + 1 == nums[i+1]:
+                combo += 1  # 相鄰差1，combo
+            else:
+                combo = 0
+        if combo >= k-1: ans.append(nums[k-1])
+        else: ans.append(-1)
+
+        for i in range(k,len(nums)):
+            if nums[i-1] + 1 == nums[i]:
+                combo += 1
+            else: combo = 0
+            if combo >= k-1: ans.append(nums[i])
+            else: ans.append(-1)
         return ans
