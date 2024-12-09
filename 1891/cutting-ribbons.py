@@ -11,7 +11,7 @@ class Solution:
         left, right = 1, max(ribbons) + 1  # 最極端的2種長度
         while left < right:
             mid = (left+right) // 2
-            if helper(mid) < k: # 「失贿」數目不夠，要再限縮長度
+            if helper(mid) < k: # 「失敗」數目不夠，要再限縮長度
                 right = mid
             else:  # 數目足夠，可「再挑戰大」一點、長一點，直到「失敗」為止
                 left = mid + 1
