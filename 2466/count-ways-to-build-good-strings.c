@@ -8,7 +8,7 @@ int countGoodStrings(int low, int high, int zero, int one){
         if(i-one>=0) table[i] += table[i-one];
         if(i-zero>=0) table[i] += table[i-zero];
         table[i] = table[i] % 1000000007;
-        printf("%lld\n", table[i]);
+        //printf("%lld\n", table[i]);
     }
     long long ans = 0;
     for(int i=low; i<=high;i++){
