@@ -1,6 +1,6 @@
 # Subsequences 比較麻煩, 因為可以漏掉一些字母, 可能性太多, 不能用暴力法去做
 # 看了 Discussion 裡, 有人提示觀察「長度為3」的特質。 這才細看題目有限定3個字母
-# 所以關鍵在最左邊、最左邊, 在哪有相同的字母。只要把26個字母都巡過一次, 就行了
+# 所以關鍵在最左邊、最右邊, 在哪有相同的字母。只要把26個字母都巡過一次, 就行了
 class Solution:
     def countPalindromicSubsequence(self, s: str) -> int:
         first = {} # first['a'] 代表 'a' 第1次出現的位置
