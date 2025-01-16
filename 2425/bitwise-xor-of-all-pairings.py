@@ -11,7 +11,7 @@ class Solution:
             for num in nums1:
                 ans ^= num  # XOR
         # 左邊、右邊配對，所以右邊的數，配對左邊 M 次
-        if M%2==1:  # 左邊是奇數是，右邊的數，才會「都算1次」
+        if M%2==1:  # 左邊是奇數時，右邊的數，才會「都算1次」
             for num in nums2:
                 ans ^= num  # XOR
         return ans
