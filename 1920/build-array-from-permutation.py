@@ -1,4 +1,4 @@
-# 1920. Build Array from Permutation
+# LeetCode 1920. Build Array from Permutation
 # 題目說 ans[i] = nums[nums[i]] 就照著寫，就好了
 class Solution:
     def buildArray(self, nums: List[int]) -> List[int]:
