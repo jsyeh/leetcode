@@ -1,3 +1,4 @@
+# LeetCode 255. Verify Preorder Sequence in Binary Search Tree
 # 這題我之前是使用「函式呼叫函式」試著照 preorder 建 Binary Search Tree 
 # 不過那時用的方法有點難、有點不直覺, 速度又慢。
 # preorder 的性質, 是最前面的那個是 root, 後面分兩群, 都符合這樣的條件, 直到結束
