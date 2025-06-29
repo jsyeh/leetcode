@@ -1,12 +1,5 @@
-"""
-# Definition for a Node.
-class Node:
-    def __init__(self, val, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-"""
-
+# LeetCode 426. Convert Binary Search Tree to Sorted Doubly Linked List
+# 將 tree 變成 doubly linked list 而且保持 sorted 的狀態
 class Solution:
     def treeToDoublyList(self, root: 'Optional[Node]') -> 'Optional[Node]':
         '''
@@ -45,3 +38,12 @@ class Solution:
                 
         helper(root)
         return head.right # 目前最小的數
+"""
+# Definition for a Node.
+class Node:
+    def __init__(self, val, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+"""
+
