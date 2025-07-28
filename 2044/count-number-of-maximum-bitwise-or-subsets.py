@@ -4,7 +4,7 @@ class Solution:
     def countMaxOrSubsets(self, nums: List[int]) -> int:
         target = 0  # bitwise-OR 的最大值，是這次的目標
         for num in nums:
-            target |= num  # 全部都 OR 起來b
+            target |= num  # 全部都 OR 起來
         # 最多有16個數，可用暴力法試出來
         N = len(nums)  # N 個數，就對應 N-bits
         ans = 0
