@@ -1,5 +1,5 @@
 // LeetCode 1672. Richest Customer Wealth
-//   j=0 1 2
+//  j= 0 1 2
 //i=0  1,2,3
 //i=1  3,2,1
 class Solution {
